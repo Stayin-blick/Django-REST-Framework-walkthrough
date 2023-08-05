@@ -21,7 +21,7 @@ class ProfileList(generics.ListAPIView):
         filters.OrderingFilter,
         DjangoFilterBackend,
     ]
-    filterset_feilds = [
+    filterset_fields = [
         'owner__following__followed__profile',
     ]
     ordering_fields = [
